@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <script
+      src="https://kit.fontawesome.com/7f3c790161.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="CSS\BarraDeNavegacion.css">
+    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="CSS/BarraDeBusqueda.css">
+    <link rel="stylesheet" href="CSS/ClasficacionDeEmpleos.css">
+    <link rel="stylesheet" href="CSS/AgregarOfertas.css">
+
+</head>
+
+<body>
+    <div class="Container">
+        <header>
+            <!-- BARRA DE NAVEGACION -->
+            <nav class="Nav-Menu">
+                <!-- 1- Esta parte sirve para colocar la imagen y el titulo de Ofertas de empleo y tiene la 
+                funcion A que implica el enlace para dirigir a la pagina de inicio si se hace clic en
+                 la imagen o en el titulo de ofertas de empleo-->
+                <a href="Index.html">
+                    <ul class="Nav-Menu-Logo">
+                        <li>
+                            <img class="Logo-Header" src="Imagenes\Logo.jpg">
+                        </li>
+                        <li>
+                            <h1>Ofertas de Empleo</h1>
+                        </li>
+                    </ul>
+                </a>
+                <!-- 1- Fin de la primera parte-->
+
+                <!-- 2- el input se ocupa para el ingreso de datos 
+                        id solo se ocupa la identificar el input
+                        label es la etiqueta 
+                        se utiliza para determinar el ID del elemento de entrada al que se debe asociar el título 
+                        Se utiliza i Muestra el texto marcado con un estilo en cursiva o italica-->
+                <input type="checkbox" id="Check">
+                <label for="Check" class="Bar-Btn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <!-- 2- Fin de la segunda parte-->
+
+                <!-- 3- -->
+                <ul class="Nav-Menu-Horizontal">
+                    <!-- textos para la barra de navegacion -->
+                    <li><a href="Index.html">Inicio</a></li>
+                    <li><a href="">Buscar Empleo</a></li>
+                    <li><a href="">Sobre Nosotros</a></li>
+                    <!-- boton desplegable de registrar  -->
+                    <li>
+                        <a class="Nav-Menu-BtnRegi">
+                            Registrarse
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <!-- botones desplegables los cuales son usuario empresa   -->
+                        <ul class="Nav-Menu-Vertical">
+                            <div>
+                                <li onclick="signupUserToggle()"><a>Como Usuario</a></li>
+                                <li onclick="signupCompanyToggle()"><a>Como Empresa</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <!-- boton de inicio de sesion  -->
+                    <li onclick="loginToggle()">
+                        <a class="Nav-Menu-BtnIni">Iniciar Sesion</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Fin de  BARRA DE NAVEGACION -->
+
+        <main>
+            <div class="frame-main">
+                <!-- -Comienzo de la creacion del buscador de las palabras claves  -->
+                <Section>
+                    <div>
+                        <h3>Encuentra tu trabajo ideal</h3>
+                    </div>
+                    <!-- Creacion Buscador por palabras claves -->
+                    <Div class="Bar">
+                        <!-- Crea lo que contiene la parte de adentro las palabras  -->
+                        <Input class="Search-Bar" type="Search"
+                            placeholder="Busca Trabajos, Empresas, Palabras clave."></Input>
+                        <!-- Creacion del boton buscar  -->
+                        <input type="button" class="Search-Bar-Button" name="BtnBusc" value="Buscar"></Input>
+                    </Div>
+                </Section>
+                <!-- Fin de la creacion del buscador  -->
+
+                <!-- Creacion del clasificado de los empleos -->
+                <Section class="frequent-Search">
+                    <!-- Este primer div solo lo ocupamos para colocar el titulo que va siendo la busquedas Frecuentes -->
+                    <div>
+                        <h4>Busquedas Frecuentes.</h4>
+                    </div>
+                    <!-- En este segundo div lo que hacemos en la creacion de la claficacion de los empleos mas buscados  -->
+                    <Div class="frequent-Search-Items">
+                        <a href="" class="Mobile">
+                            <i class="fa-solid fa-magnifying-glass fa-spin fa-spin-reverse"></i>Trabajo Desde Casa
+                        </a>
+                        <a href="" class="Mobile">
+                            <i class="fa-solid fa-magnifying-glass"></i>Ventas y Negocios
+                        </a>
+                        <a href="">
+                            <i >IT y Software</i>
+                        </a>
+                        <a href="">
+                            <i >Ingeneria</i>
+                        </a>
+                        <a href="">
+                            <i >Atencion al Cliente</i>
+                        </a>
+                        <a href="">
+                            <i >Comercial</i>
+                        </a>
+                    </Div>
+                </Section>
+                <!-- Fin de la creacion de la clasificacion de las busquedas mas frecuentes -->
+
+                <!-- Comienzo de la seccion de ultimas ofertas  -->
+                <section class="added-oferts">
+                    <h4>Ultimas ofertas Agregadas</h4>
+                    <div>
+                        <!-- Este Primer Enlace  va a contener lo que el titulo del empleo y unas caracteriticas del mismo empleo  -->
+                        <a href="" class="Mobile">
+                            <h1>Especialista de Marketing</h1>
+                            <p>
+                                Se requiere Especialista de Marketing con un nivel de ingles
+                                Avanzado (B2) con experiencia en el campo laboral de productos
+                                de Gelatina, Galletas, Caramelos, etc...
+                            </p>
+                            <div>
+                                <p class="added-oferts-line">Lun, Mar, Mier,Jue y Vier</p>
+                                <p>Hora 8:00 am. - 5:00 pm.</p>
+                                <div>
+                                    <p>Salario: No Definido</p>
+                                    <p class="time">Publicado hace 15 segundos</p>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- Fin del primer Enlace esto se repetira 2 veces mas para los demas empleos -->
+                        <!-- 2 Segundo  -->
+                        <a href="">
+                            <h1>Visitador Comercial Monotizado</h1>
+                            <p>
+                                Descripción del Trabajo: Realizar visitas a pulperías del
+                                país. Registrar su visita desde una App Móvil guardando la
+                                ubicación e información de la pulpería...
+                            </p>
+                            <div>
+                                <p class="added-oferts-line">Lun, Mar, Mier,Jue y Vier</p>
+                                <p>Hora 8:00 am. - 5:00 pm.</p>
+                                <div>
+                                    <p>Salario: 7000 C$</p>
+                                    <p class="time">Publicado hace 1 minuto</p>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- 3 tercero -->
+                        <a href="">
+                            <h1>Oficial De Credito</h1>
+                            <p>
+                                Persona encargada de la administración de cartera de crédito,
+                                cumplimiento con las políticas establecidas por la institución
+                                para el otorgamiento de créditos...
+                            </p>
+                            <div>
+                                <p class="added-oferts-line">Sab, Dom y Lunes</p>
+                                <p>Hora 8:00 am. - 5:00 pm.</p>
+                                <div>
+                                    <p>Salario: 15,000 C$</p>
+                                    <p class="time">Publicado hace 5 Minutos</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="" class="see-more"> Ver Mas Ofertas.</a>
+                </section>
+
+
+            </div>
+        </main>
+    </div>
+
+
+
+
+</body>
+
+</html>

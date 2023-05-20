@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros</title>
+    <link rel="stylesheet" href="CSS\BarraDeNavegacion.css">
+    <link rel="stylesheet" href="CSS/Style.css">
+
+</head>
+
+<body>
+    <header>
+        <!-- BARRA DE NAVEGACION -->
+        <nav class="Nav-Menu">
+            <!-- 1- Esta parte sirve para colocar la imagen y el titulo de Ofertas de empleo y tiene la 
+                funcion A que implica el enlace para dirigir a la pagina de inicio si se hace clic en
+                 la imagen o en el titulo de ofertas de empleo-->
+            <a href="Index.html">
+                <ul class="Nav-Menu-Logo">
+                    <li>
+                        <img class="Logo-Header" src="Imagenes\Logo.jpg">
+                    </li>
+                    <li>
+                        <h1>Ofertas de Empleo</h1>
+                    </li>
+                </ul>
+            </a>
+
+            <input type="checkbox" id="Check">
+            <label for="Check" class="Bar-Btn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <!-- 2- Fin de la segunda parte-->
+
+                <!-- 3- -->
+                <ul class="Nav-Menu-Horizontal">
+                    <!-- textos para la barra de navegacion -->
+                    <li><a href="Index.html">Inicio</a></li>
+                    <li><a href="">Buscar Empleo</a></li>
+                    <li><a href="">Sobre Nosotros</a></li>
+                    <!-- boton desplegable de registrar  -->
+                    <li>
+                        <a class="Nav-Menu-BtnRegi">
+                            Registrarse
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <!-- botones desplegables los cuales son usuario empresa   -->
+                        <ul class="Nav-Menu-Vertical">
+                            <div>
+                                <li onclick="signupUserToggle()"><a>Como Usuario</a></li>
+                                <li onclick="signupCompanyToggle()"><a>Como Empresa</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <!-- boton de inicio de sesion  -->
+                    <li onclick="loginToggle()">
+                        <a class="Nav-Menu-BtnIni">Iniciar Sesion</a>
+                    </li>
+                </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="Acerca">
+            <div class="Acerca-De">
+                <h1>Ofertas de empleo</h1>
+                <h2>Sobre Nosotros</h2>
+                <p>Se trata de una plataforma innovadora para la gestión de empleos que se enfoca en ofrecer soluciones de contratación de candidatos a las empresas. A través de nuestros avanzados filtros de selección, usted podrá aplicar criterios específicos en nuestra base de prospectos, lo que le permitirá encontrar los mejores candidatos para su empresa.</p>
+            </div>
+            <div class="Acerca-Mision-Vision">
+                <div>
+                    <h2>Mision</h2>
+                    <p>Nuestro compromiso es ofrecer servicios de alta calidad basados en la confianza y la confidencialidad, con el objetivo de mejorar la eficiencia empresarial de nuestros clientes. Nos enfocamos en maximizar los beneficios tanto para nuestros clientes como para nuestros colaboradores, y garantizar al mismo tiempo un menor riesgo laboral.</p>
+                </div>
+                <div>
+                    <h2>Vision</h2>
+                    <p>Nuestro compromiso es ofrecer servicios de alta calidad basados en la confianza y la confidencialidad, con el objetivo de mejorar la eficiencia empresarial de nuestros clientes. Nos enfocamos en maximizar los beneficios tanto para nuestros clientes como para nuestros colaboradores, y garantizar al mismo tiempo un menor riesgo laboral.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="Container">
+        <div id="Mapa" class="Mapa">
+            <!-- Hasta aqui llegue  :V -->
+        </div>
+    </div>
+
+</body>
+
+</html>

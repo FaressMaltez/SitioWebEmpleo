@@ -1,0 +1,98 @@
+header {
+    background-color: rgba(0, 0, 0, 0.20);
+    padding: auto;
+    display: flex;
+}
+
+.Logo-Header {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.Nav-Menu {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    font-size: 100%;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.Nav-Menu-Logo {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-weight: lighter;
+    width: 100%;
+
+}
+
+.Nav-Menu .Nav-Menu-Horizontal {
+    display: flex;
+    align-items: center;
+}
+
+.Nav-Menu-Horizontal {
+    display: flex;
+    align-items: center;
+}
+
+.Nav-Menu-Vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    background-color: #0d3159;
+    width: 160px;
+
+    border: 1px solid white;
+    justify-content: center;
+    text-align: center;
+    border-top: none;
+
+}
+
+/* Despliega el menu  */
+.Nav-Menu-Horizontal li:hover .Nav-Menu-Vertical{
+    display: block;
+}
+/* dise;o del boton registrar  */
+.Nav-Menu-BtnRegi{
+    background-color: #0D3159;
+    border-radius: 10px 0 0 10px;
+    font-style: normal;
+    border: 1px solid;
+    border-color: white;
+    padding: 10px 30px;
+    margin: 5px 0;
+    font-size: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.Nav-Menu-BtnIni{
+    background-color: #0D3159;
+    border-radius: 0px 10px 10px 0px;
+    font-style: normal;
+    border: 1px solid;
+    border-color: white;
+    padding: 10px 30px;
+    margin: 5px 0;
+    font-size: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.Bar-Btn {
+    display: block;
+    font-size: 45px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: none;
+}
+/* Oculta el check de la barra de navegacion  */
+#Check {
+    display: none;
+}

@@ -1,0 +1,22 @@
+/* con esto ajustamos el boton de busqueda y la barra de busqueda */
+.Bar{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    height: 50px;
+}
+
+.Search-Bar{
+    border: 1px solid;
+    border-color: black;
+    border-radius: 10px 0 0 10px;
+    color: #777777;
+    font-size: 30px;
+}
+
+.Search-Bar-Button{
+    border: 1px solid;
+    border-color: white;
+    font-size: 24px;
+    border-radius: 0 10px 10px 0;
+    background-color: #0D3159;
+}
