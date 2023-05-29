@@ -8,6 +8,11 @@
     <title>Sobre Nosotros</title>
     <link rel="stylesheet" href="CSS\BarraDeNavegacion.css">
     <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="CSS/Contacto.css">
+
+
+
+    
 
 </head>
 
@@ -35,31 +40,31 @@
             </label>
             <!-- 2- Fin de la segunda parte-->
 
-                <!-- 3- -->
-                <ul class="Nav-Menu-Horizontal">
-                    <!-- textos para la barra de navegacion -->
-                    <li><a href="Index.html">Inicio</a></li>
-                    <li><a href="">Buscar Empleo</a></li>
-                    <li><a href="">Sobre Nosotros</a></li>
-                    <!-- boton desplegable de registrar  -->
-                    <li>
-                        <a class="Nav-Menu-BtnRegi">
-                            Registrarse
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </a>
-                        <!-- botones desplegables los cuales son usuario empresa   -->
-                        <ul class="Nav-Menu-Vertical">
-                            <div>
-                                <li onclick="signupUserToggle()"><a>Como Usuario</a></li>
-                                <li onclick="signupCompanyToggle()"><a>Como Empresa</a></li>
-                            </div>
-                        </ul>
-                    </li>
-                    <!-- boton de inicio de sesion  -->
-                    <li onclick="loginToggle()">
-                        <a class="Nav-Menu-BtnIni">Iniciar Sesion</a>
-                    </li>
-                </ul>
+            <!-- 3- -->
+            <ul class="Nav-Menu-Horizontal">
+                <!-- textos para la barra de navegacion -->
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="">Buscar Empleo</a></li>
+                <li><a href="">Sobre Nosotros</a></li>
+                <!-- boton desplegable de registrar  -->
+                <li>
+                    <a class="Nav-Menu-BtnRegi">
+                        Registrarse
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <!-- botones desplegables los cuales son usuario empresa   -->
+                    <ul class="Nav-Menu-Vertical">
+                        <div>
+                            <li onclick="signupUserToggle()"><a>Como Usuario</a></li>
+                            <li onclick="signupCompanyToggle()"><a>Como Empresa</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <!-- boton de inicio de sesion  -->
+                <li onclick="loginToggle()">
+                    <a class="Nav-Menu-BtnIni">Iniciar Sesion</a>
+                </li>
+            </ul>
         </nav>
     </header>
 
@@ -68,24 +73,34 @@
             <div class="Acerca-De">
                 <h1>Ofertas de empleo</h1>
                 <h2>Sobre Nosotros</h2>
-                <p>Se trata de una plataforma innovadora para la gestión de empleos que se enfoca en ofrecer soluciones de contratación de candidatos a las empresas. A través de nuestros avanzados filtros de selección, usted podrá aplicar criterios específicos en nuestra base de prospectos, lo que le permitirá encontrar los mejores candidatos para su empresa.</p>
+                <p>Se trata de una plataforma innovadora para la gestión de empleos que se enfoca en ofrecer soluciones
+                    de contratación de candidatos a las empresas. A través de nuestros avanzados filtros de selección,
+                    usted podrá aplicar criterios específicos en nuestra base de prospectos, lo que le permitirá
+                    encontrar los mejores candidatos para su empresa.</p>
             </div>
             <div class="Acerca-Mision-Vision">
                 <div>
                     <h2>Mision</h2>
-                    <p>Nuestro compromiso es ofrecer servicios de alta calidad basados en la confianza y la confidencialidad, con el objetivo de mejorar la eficiencia empresarial de nuestros clientes. Nos enfocamos en maximizar los beneficios tanto para nuestros clientes como para nuestros colaboradores, y garantizar al mismo tiempo un menor riesgo laboral.</p>
+                    <p>Nuestro compromiso es ofrecer servicios de alta calidad basados en la confianza y la
+                        confidencialidad, con el objetivo de mejorar la eficiencia empresarial de nuestros clientes. Nos
+                        enfocamos en maximizar los beneficios tanto para nuestros clientes como para nuestros
+                        colaboradores, y garantizar al mismo tiempo un menor riesgo laboral.</p>
                 </div>
                 <div>
                     <h2>Vision</h2>
-                    <p>Nuestro compromiso es ofrecer servicios de alta calidad basados en la confianza y la confidencialidad, con el objetivo de mejorar la eficiencia empresarial de nuestros clientes. Nos enfocamos en maximizar los beneficios tanto para nuestros clientes como para nuestros colaboradores, y garantizar al mismo tiempo un menor riesgo laboral.</p>
+                    <p>Nuestro compromiso es ofrecer servicios de alta calidad basados en la confianza y la
+                        confidencialidad, con el objetivo de mejorar la eficiencia empresarial de nuestros clientes. Nos
+                        enfocamos en maximizar los beneficios tanto para nuestros clientes como para nuestros
+                        colaboradores, y garantizar al mismo tiempo un menor riesgo laboral.</p>
                 </div>
             </div>
         </div>
     </main>
 
     <div class="Container">
-        <div id="Mapa" class="Mapa">
-            <!-- Hasta aqui llegue  :V -->
+        <div id="map" class="map">
+            <script src="JavaScript\Mapa.js"></script>
+            <script src=""></script>
         </div>
     </div>
 
