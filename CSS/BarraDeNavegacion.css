@@ -34,17 +34,13 @@ header {
     align-items: center;
 }
 
-.Nav-Menu-Horizontal {
-    display: flex;
-    align-items: center;
-}
 
 .Nav-Menu-Vertical {
     position: absolute;
     display: none;
     list-style: none;
     background-color: #0d3159;
-    width: 160px;
+    width: 162px;
 
     border: 1px solid white;
     justify-content: center;
@@ -57,6 +53,41 @@ header {
 .Nav-Menu-Horizontal li:hover .Nav-Menu-Vertical{
     display: block;
 }
+/*Inicio del codigo que te faltaba*/
+
+.Nav-Menu-Vertical div{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.Nav-Menu-Vertical div li:hover {
+    background-color: white;
+}
+.Nav-Menu-Vertical div li:hover a {
+    color: #0D3159;
+    
+}
+.Nav-Menu-Vertical div li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 50px;
+    justify-content: center;
+    margin-right: 0;
+}
+
+.Nav-Menu li {
+    margin-right: 5px;
+    font-weight: lighter;
+
+}
+.Nav-Menu h1 {
+    font-size: 25px;
+}
+
+/*Fin del codigo que te faltaba*/
+
 /* dise;o del boton registrar  */
 .Nav-Menu-BtnRegi{
     background-color: #0D3159;
@@ -81,6 +112,7 @@ header {
     padding: 10px 30px;
     margin: 5px 0;
     font-size: 100%;
+    width: 100%;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
@@ -96,3 +128,4 @@ header {
 #Check {
     display: none;
 }
+

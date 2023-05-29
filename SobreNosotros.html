@@ -6,23 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nosotros</title>
-    <link rel="stylesheet" href="CSS\BarraDeNavegacion.css">
+    <link rel="stylesheet" href="CSS/BarraDeNavegacion.css">
     <link rel="stylesheet" href="CSS/Style.css">
     <link rel="stylesheet" href="CSS/Contacto.css">
+    <link rel="stylesheet" href="CSS/geo.css">
 
-
-
+    <script
+    src="https://kit.fontawesome.com/7f3c790161.js"
+    crossorigin="anonymous"
+  ></script>
     
 
 </head>
 
 <body>
     <header>
-        <!-- BARRA DE NAVEGACION -->
         <nav class="Nav-Menu">
-            <!-- 1- Esta parte sirve para colocar la imagen y el titulo de Ofertas de empleo y tiene la 
-                funcion A que implica el enlace para dirigir a la pagina de inicio si se hace clic en
-                 la imagen o en el titulo de ofertas de empleo-->
             <a href="Index.html">
                 <ul class="Nav-Menu-Logo">
                     <li>
@@ -33,26 +32,23 @@
                     </li>
                 </ul>
             </a>
-
             <input type="checkbox" id="Check">
             <label for="Check" class="Bar-Btn">
                 <i class="fa-solid fa-bars"></i>
             </label>
-            <!-- 2- Fin de la segunda parte-->
-
-            <!-- 3- -->
+     
             <ul class="Nav-Menu-Horizontal">
-                <!-- textos para la barra de navegacion -->
+            
                 <li><a href="Index.html">Inicio</a></li>
                 <li><a href="">Buscar Empleo</a></li>
-                <li><a href="">Sobre Nosotros</a></li>
-                <!-- boton desplegable de registrar  -->
+                <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
+          
                 <li>
                     <a class="Nav-Menu-BtnRegi">
                         Registrarse
                         <i class="fa-solid fa-chevron-down"></i>
                     </a>
-                    <!-- botones desplegables los cuales son usuario empresa   -->
+                
                     <ul class="Nav-Menu-Vertical">
                         <div>
                             <li onclick="signupUserToggle()"><a>Como Usuario</a></li>
@@ -60,7 +56,7 @@
                         </div>
                     </ul>
                 </li>
-                <!-- boton de inicio de sesion  -->
+               
                 <li onclick="loginToggle()">
                     <a class="Nav-Menu-BtnIni">Iniciar Sesion</a>
                 </li>
@@ -99,8 +95,8 @@
 
     <div class="Container">
         <div id="map" class="map">
-            <script src="JavaScript\Mapa.js"></script>
-            <script src=""></script>
+            <script src="js/map.js"></script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
         </div>
     </div>
 
