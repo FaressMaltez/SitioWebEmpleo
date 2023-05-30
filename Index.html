@@ -16,11 +16,13 @@
     <link rel="stylesheet" href="CSS/ClasficacionDeEmpleos.css">
     <link rel="stylesheet" href="CSS/AgregarOfertas.css">
     <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="CSS/login-company.css">
    
 </head>
 
 <body>
-    <div class="Container">
+    <div class="container">
         <header>
             <!-- BARRA DE NAVEGACION Prueba de guardado-->
             <nav class="Nav-Menu">
@@ -65,6 +67,7 @@
                         <!-- botones desplegables los cuales son usuario empresa   -->
                         <ul class="Nav-Menu-Vertical">
                             <div>
+<!--signUserToggle, signCompay toggle, login toggle son metodos de JS que permiten llamar a los formularios al dar click-->
                                 <li onclick="signupUserToggle()"><a>Como Usuario</a></li>
                                 <li onclick="signupCompanyToggle()"><a>Como Empresa</a></li>
                             </div>
@@ -280,6 +283,126 @@
           </footer>
     </div>
 
+    <!--Div que contiene el formulario iniciar sesion-->
+    <div class="form login-form">
+      <div class="form1 nav-menu-horizontal">
+        <div class="close" onclick="loginToggle()">&times;</div>
+        <div class="header">
+          <i class="fa-regular fa-circle-user"></i>
+          <h1>Iniciar sesión</h1>
+        </div>
+        <form id="loginForm" method="post">
+          <div>
+            <div class="user-name">
+              <label class="">Nombre de Usuario</label>
+              <input id="txtUser" class="text-box" type="text" required />
+            </div>
+
+            <div class="password">
+              <label>Contraseña</label>
+              <input id="passUser" class="text-box" type="password" required />
+            </div>
+            <div>
+              <input id="typeUser" type="checkbox">
+              <label for="typeUser">Click aqui si eres una empresa.</label>
+            </div>
+            <div class="btn-area-login">
+              <input
+                class="btn"
+                type="submit"
+                style="text-decoration: none"
+                value="Iniciar Sesion"
+              />
+              <li>
+                <div class="btn2">
+                  <a>¿Aún no tienes cuenta? mira aquí </a>
+                  <ul class="nav-menu-vertical nav-menu-vertical2">
+                    <div>
+                      <li><a href="create-account.html">Como Usuario</a></li>
+                      <li><a href="login-company.html">Como Empresa</a></li>
+                    </div>
+                  </ul>
+                </div>
+              </li>
+            </div>
+            <a href="account-recovery.html"
+              >¿Olvidastes tu contraseña o tu Usuario?</a
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!--Div que contiene al formulario crear usuario-->
+    <div class="form signup-form-user">
+      <div class="form1 nav-menu-horizontal">
+        <div class="close" onclick="signupUserToggle()">&times;</div>
+        <div class="header">
+          <i class="fa-regular fa-circle-user"></i>
+          <h1>Registro del Usuario</h1>
+        </div>
+        <form method="post" action="/js/">
+          <div class="user-name">
+            <label class="">Nombre:</label>
+            <input class="text-box" type="text" required />
+            <label class="">Apellido:</label>
+            <input class="text-box" type="text" required />
+            <label class="">Correo:</label>
+            <input class="text-box" type="email" required />
+            <label class="">Contraseña:</label>
+            <input class="text-box" type="password" required />
+            <label class="">Repita su contraseña:</label>
+            <input class="text-box" type="password" />
+            <div class="btn-area">
+              <input class="btn" type="submit" value="Registrarse" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!--Div que contiene al formulario crear empresa-->
+    <div class="form signup-form-company">
+      <div class="form1 nav-menu-horizontal">
+        <div class="close" onclick="signupCompanyToggle()">&times;</div>
+        <form method="post">
+          <div class="user-name">
+            <div class="header">
+              <i class="fa-regular fa-circle-user"></i>
+              <h1>Registro del Representante</h1>
+            </div>
+            <label class="">Nombre:</label>
+            <input class="text-box" type="text" required />
+            <label class="">Apellido:</label>
+            <input class="text-box" type="text" required />
+            <label class="">Correo:</label>
+            <input class="text-box" type="email" required />
+
+            <div class="header">
+              <h1>Informacion de la Empresa</h1>
+            </div>
+            <label>Nombre de la Empresa:</label>
+            <input class="text-box" type="text" />
+            <label>Telefono de Contacto:</label>
+            <input class="text-box" type="number" required />
+            <label>Identificación fiscal (Cédula RUC):</label>
+            <input class="text-box" type="text" required />
+            <label>Descripción de la empresa:</label>
+            <input class="text-box" type="text" required />
+            <label>Contraseña:</label>
+            <input class="text-box" type="password" required />
+            <label>Confirme su contraseña:</label>
+            <input class="text-box" type="password" required />
+            <input class="btn" type="submit" value="Registrarse" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+   <!--Este es el JS que contiene los metodos para llamar a los formularios y el de validacion de formularios-->
+    
+   <script src="js/login-singnup-modal.js"></script>
+   <script src="js/forms.js"></script>
 </body>
 
 </html
