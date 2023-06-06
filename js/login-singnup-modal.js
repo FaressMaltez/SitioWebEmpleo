@@ -21,3 +21,11 @@ function loginToggle(){
     var popup = document.querySelector('.login-form');
     popup.classList.toggle('active');
 }
+
+const rango = document.querySelector("#rango")
+const autvol = document.querySelector("#outvol")
+
+rango.oninput = () =>{
+    outvol.value = rango.value
+}
+

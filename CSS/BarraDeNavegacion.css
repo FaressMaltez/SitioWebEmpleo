@@ -53,7 +53,6 @@ header {
 .Nav-Menu-Horizontal li:hover .Nav-Menu-Vertical{
     display: block;
 }
-/*Inicio del codigo que te faltaba*/
 
 .Nav-Menu-Vertical div{
     display: flex;
@@ -85,8 +84,6 @@ header {
 .Nav-Menu h1 {
     font-size: 25px;
 }
-
-/*Fin del codigo que te faltaba*/
 
 /* dise;o del boton registrar  */
 .Nav-Menu-BtnRegi{
