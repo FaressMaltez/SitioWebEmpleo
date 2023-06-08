@@ -30,6 +30,8 @@ main{
 .btn{
     width: auto;
     background-color: #1E746F;
+    height: 40px;
+    border-radius: 10px;
 }
 
 .menu-info{
