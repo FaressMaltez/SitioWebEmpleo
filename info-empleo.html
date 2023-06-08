@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del empleo</title>
+    <script src="https://kit.fontawesome.com/7f3c790161.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="CSS/BarraDeNavegacion.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/empleo-info.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- BARRA DE NAVEGACION -->
+            <nav class="Nav-Menu">
+                <!-- 1- Esta parte sirve para colocar la imagen y el titulo de Ofertas de empleo y tiene la 
+                funcion A que implica el enlace para dirigir a la pagina de inicio si se hace clic en
+                 la imagen o en el titulo de ofertas de empleo-->
+                <a href="Index.html">
+                    <ul class="Nav-Menu-Logo">
+                        <li>
+                            <img class="Logo-Header" src="Imagenes\Logo.jpg">
+                        </li>
+                        <li>
+                            <h1>Ofertas de Empleo</h1>
+                        </li>
+                    </ul>
+                </a>
+                <!-- 1- Fin de la primera parte-->
+    
+                <!-- 2- el input se ocupa para el ingreso de datos 
+                        id solo se ocupa la identificar el input
+                        label es la etiqueta 
+                        se utiliza para determinar el ID del elemento de entrada al que se debe asociar el título 
+                        Se utiliza i Muestra el texto marcado con un estilo en cursiva o italica-->
+                <input type="checkbox" id="Check">
+                <label for="Check" class="Bar-Btn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <!-- 2- Fin de la segunda parte-->
+    
+                <!-- 3- -->
+                <ul class="Nav-Menu-Horizontal">
+                    <!-- textos para la barra de navegacion -->
+                    <li><a href="Index.html">Inicio</a></li>
+                    <li><a href="Buscar_Trabajo.html">Buscar Empleo</a></li>
+                    <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
+                    <!-- boton desplegable de registrar  -->
+                    <li>
+                        <a class="Nav-Menu-BtnRegi">
+                            Registrarse
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <!-- botones desplegables los cuales son usuario empresa   -->
+                        <ul class="Nav-Menu-Vertical">
+                            <div>
+    <!--signUserToggle, signCompay toggle, login toggle son metodos de JS que permiten llamar a los formularios al dar click-->
+                                <li onclick="signupUserToggle()"><a>Como Usuario</a></li>
+                                <li onclick="signupCompanyToggle()"><a>Como Empresa</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <!-- boton de inicio de sesion  -->
+                    <li onclick="loginToggle()">
+                        <a class="Nav-Menu-BtnIni">Iniciar Sesion</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Fin de  BARRA DE NAVEGACION -->
+
+        <main>
+            <div class="encabezado">
+                <div class="encabezado-items">
+                    <h1>ESPECIALISTA DE MARKETING</h1>
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Ubicación: Chinandega - El Viejo
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-star"></i>
+                        Sector: Servicios
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-clock"></i>
+                        Vacante: Tiempo Completo
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-calendar-days"></i>
+                        Fecha de Vencimiento: 2021-05-31 00:00:00
+                    </p>
+                </div>
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3893.325712721402!2d-87.12822765873447!3d12.626624708880374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f70f1ec32d7ec3f%3A0x53e0a1538f9602ec!2sChinandega!5e0!3m2!1ses!2sni!4v1656646350960!5m2!1ses!2sni"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="menu-info">
+                <div class="info">
+                    <h2>
+                        <i class="fa-solid fa-briefcase"></i>
+                        Descripción
+                    </h2>
+                    <p>
+                        Titulado: Lic. Marketing.<br>
+                        Inglés avanzado. <br>
+                        Conocimientos:<br>
+                        - Análisis de mercado definiendo a los clientes prospecto y las estrategias para llegar a ellos
+                        (corto,
+                        mediano o largo plazo).<br>
+                        - Implementación de estrategias de marketing en los medios.<br>
+                        - Evaluación sobre la efectividad de las estrategias implementadas.<br>
+                        - Atención a quejas, elogios y sugerencias.<br>
+                        - Crear y Mantener una base de datos actualizada.<br>
+                        - Coordinación de participación en Congresos, eventos y talleres tanto científicos como comerciales
+                        en
+                        los temas de interés de la empresa.<br>
+                        - Apoyo en la Administración de página Web (promociones, eventos, galería de fotos, agregar nuevos
+                        clientes VIP).<br>
+                        - Diseño de publicidad.<br>
+                        - Investigaciones de mercado.<br>
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-money-bill-1-wave"></i>
+                        Rango Salarial: No definido
+                    </p>
+    
+                    <input type="button" class="nav-menu-btnIni btn" value="INSCRIBIRME EN ESTA OFERTA">
+                </div>
+                <div class="menu-info-publisher">
+                    <section>
+                        <aside>
+                            <img class="publisher-items"
+                                src="Imagenes/4a66f333332919.56a84344447ec.jpg">
+                        </aside>
+                    </section>
+                    <section>
+                        <aside>
+                            <img class="publisher-items" src="Imagenes/vertical-bubble-tea-ad-on-blue-ray-pattern-free-vector.jpg">
+                        </aside>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+              <div class="footer-div">
+                <div>
+                  <h5>Acerca de nosotros</h5>
+                  <p class="footer-p">
+                    Innovación tecnológica para la gestión de empleos.
+                    <br />
+                    <br />
+                    Soluciones en la contratación de su personal, uso de filtros
+                    avanzados en nuestra base de propectos.
+                  </p>
+                </div>
+                <div>
+                  <h5>Páginas frecuentes</h5>
+                  <ul>
+                    <li>
+                      <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                      <a href="contacto.html">Nosotros</a>
+                    </li>
+                    <li><a href="contactenos.html">Contáctanos</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h5>Detalles de contacto</h5>
+                  <ul>
+                    <li>
+                      <a href="">Ofertasdeempleo@gmail.com</a>
+                    </li>
+                    <li>
+                      <a href="">Ofertadeempleo.com</a>
+                    </li>
+                  </ul>
+    
+                  <!-- Reloj -->
+                  <section class="relojFooter">
+                    <div class="wrap">
+                      <div class="widget">
+                        <div class="fecha">
+                          <p id="diaSemana" classs="diaSemana"></p>
+                          <p id="dia" class="dia"></p>
+                          <p>de</p>
+                          <p id="mes" class="mes"></p>
+                          <p id="year" class="year"></p>
+                        </div>
+                        <div class="reloj">
+                          <p id="horas" class="horas"></p>
+                          <p>:</p>
+                          <p id="minutos" class="minutos"></p>
+                          <p>:</p>
+                          <div class="caja-segundos">
+                            <p id="ampm" class="ampm"></p>
+                            <p id="segundos" class="segundos"></p>
+                          </div>
+                        </div>
+                      </div>
+                      <script src="js/reloj.js"></script>
+                    </div>
+                  </section>
+                </div>
+                
+              </div>
+              
+              <h5>
+                All Rights Reserved. © 2023 Ofertas De Empleo.
+                <a href="https://www.facebook.com/"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a href="https://twitter.com/"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a href="https://www.linkedin.com/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="https://www.instagram.com/"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </h5>
+            </div>
+            
+          </footer>
+    </div>
+</body>
+</html>
