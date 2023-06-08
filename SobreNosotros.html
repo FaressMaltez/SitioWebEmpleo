@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="CSS/Style.css">
     <link rel="stylesheet" href="CSS/Contacto.css">
     <link rel="stylesheet" href="CSS/geo.css">
+    <link rel="stylesheet" href="CSS/login-company.css">
+    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="CSS/">
 
     <script
     src="https://kit.fontawesome.com/7f3c790161.js"
@@ -20,86 +23,204 @@
 </head>
 
 <body>
-    <header>
-        <nav class="Nav-Menu">
-            <a href="Index.html">
-                <ul class="Nav-Menu-Logo">
+    <div class="container">
+        <header>
+            <nav class="Nav-Menu">
+                <a href="Index.html">
+                    <ul class="Nav-Menu-Logo">
+                        <li>
+                            <img class="Logo-Header" src="Imagenes\Logo.jpg">
+                        </li>
+                        <li>
+                            <h1>Ofertas de Empleo</h1>
+                        </li>
+                    </ul>
+                </a>
+                <input type="checkbox" id="Check">
+                <label for="Check" class="Bar-Btn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+         
+                <ul class="Nav-Menu-Horizontal">
+                
+                    <li><a href="Index.html">Inicio</a></li>
+                    <li><a href="Buscar_Trabajo.htm">Buscar Empleo</a></li>
+                    <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
+              
                     <li>
-                        <img class="Logo-Header" src="Imagenes\Logo.jpg">
+                        <a class="Nav-Menu-BtnRegi">
+                            Registrarse
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                    
+                        <ul class="Nav-Menu-Vertical">
+                            <div>
+                                <li onclick="signupUserToggle()"><a>Como Usuario</a></li>
+                                <li onclick="signupCompanyToggle()"><a>Como Empresa</a></li>
+                            </div>
+                        </ul>
                     </li>
-                    <li>
-                        <h1>Ofertas de Empleo</h1>
+                   
+                    <li onclick="loginToggle()">
+                        <a class="Nav-Menu-BtnIni">Iniciar Sesion</a>
                     </li>
                 </ul>
-            </a>
-            <input type="checkbox" id="Check">
-            <label for="Check" class="Bar-Btn">
-                <i class="fa-solid fa-bars"></i>
-            </label>
-     
-            <ul class="Nav-Menu-Horizontal">
-            
-                <li><a href="Index.html">Inicio</a></li>
-                <li><a href="">Buscar Empleo</a></li>
-                <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
-          
-                <li>
-                    <a class="Nav-Menu-BtnRegi">
-                        Registrarse
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </a>
-                
-                    <ul class="Nav-Menu-Vertical">
-                        <div>
-                            <li onclick="signupUserToggle()"><a>Como Usuario</a></li>
-                            <li onclick="signupCompanyToggle()"><a>Como Empresa</a></li>
-                        </div>
-                    </ul>
-                </li>
-               
-                <li onclick="loginToggle()">
-                    <a class="Nav-Menu-BtnIni">Iniciar Sesion</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <div class="Acerca">
-            <div class="Acerca-De">
-                <h1>Ofertas de empleo</h1>
-                <h2>Sobre Nosotros</h2>
-                <p>Se trata de una plataforma innovadora para la gestión de empleos que se enfoca en ofrecer soluciones
-                    de contratación de candidatos a las empresas. A través de nuestros avanzados filtros de selección,
-                    usted podrá aplicar criterios específicos en nuestra base de prospectos, lo que le permitirá
-                    encontrar los mejores candidatos para su empresa.</p>
-            </div>
-            <div class="Acerca-Mision-Vision">
-                <div>
-                    <h2>Mision</h2>
-                    <p>Nuestro compromiso es ofrecer servicios de alta calidad basados en la confianza y la
-                        confidencialidad, con el objetivo de mejorar la eficiencia empresarial de nuestros clientes. Nos
-                        enfocamos en maximizar los beneficios tanto para nuestros clientes como para nuestros
-                        colaboradores, y garantizar al mismo tiempo un menor riesgo laboral.</p>
+            </nav>
+        </header>
+    
+        <main>
+            <div class="Acerca">
+                <div class="Acerca-De">
+                    <h1>Ofertas de empleo</h1>
+                    <h2>Sobre Nosotros</h2>
+                    <p>Se trata de una plataforma innovadora para la gestión de empleos que se enfoca en ofrecer soluciones
+                        de contratación de candidatos a las empresas. A través de nuestros avanzados filtros de selección,
+                        usted podrá aplicar criterios específicos en nuestra base de prospectos, lo que le permitirá
+                        encontrar los mejores candidatos para su empresa.</p>
                 </div>
-                <div>
-                    <h2>Vision</h2>
-                    <p>Nuestro compromiso es ofrecer servicios de alta calidad basados en la confianza y la
-                        confidencialidad, con el objetivo de mejorar la eficiencia empresarial de nuestros clientes. Nos
-                        enfocamos en maximizar los beneficios tanto para nuestros clientes como para nuestros
-                        colaboradores, y garantizar al mismo tiempo un menor riesgo laboral.</p>
+                <div class="Acerca-Mision-Vision">
+                    <div>
+                        <h2>Mision</h2>
+                        <p>Nuestro compromiso es ofrecer servicios de alta calidad basados en la confianza y la
+                            confidencialidad, con el objetivo de mejorar la eficiencia empresarial de nuestros clientes. Nos
+                            enfocamos en maximizar los beneficios tanto para nuestros clientes como para nuestros
+                            colaboradores, y garantizar al mismo tiempo un menor riesgo laboral.</p>
+                    </div>
+                    <div>
+                        <h2>Vision</h2>
+                        <p>Nuestro compromiso es ofrecer servicios de alta calidad basados en la confianza y la
+                            confidencialidad, con el objetivo de mejorar la eficiencia empresarial de nuestros clientes. Nos
+                            enfocamos en maximizar los beneficios tanto para nuestros clientes como para nuestros
+                            colaboradores, y garantizar al mismo tiempo un menor riesgo laboral.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </main>
-
-    <div class="Container">
-        <div id="map" class="map">
-            <script src="js/map.js"></script>
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+        </main>
+    
+        <div class="Container">
+            <div id="map" class="map">
+                <script src="js/map.js"></script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+            </div>
         </div>
     </div>
-
+      <!--Div que contiene al formulario crear usuario-->
+      <div class="form signup-form-user">
+        <div class="form1 nav-menu-horizontal">
+          <div class="close" onclick="signupUserToggle()">&times;</div>
+          <div class="header">
+            <i class="fa-regular fa-circle-user"></i>
+            <h1>Registro del Usuario</h1>
+          </div>
+          <form method="post" action="/js/">
+            <div class="user-name">
+              <label class="">Nombre:</label>
+              <input class="text-box" type="text" required />
+              <label class="">Apellido:</label>
+              <input class="text-box" type="text" required />
+              <label class="">Correo:</label>
+              <input class="text-box" type="email" required />
+              <label class="">Contraseña:</label>
+              <input class="text-box" type="password" required />
+              <label class="">Repita su contraseña:</label>
+              <input class="text-box" type="password" />
+              <div class="btn-area">
+                <input class="btn" type="submit" value="Registrarse" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      <!--Div que contiene al formulario crear empresa-->
+      <div class="form signup-form-company">
+        <div class="form1 nav-menu-horizontal">
+          <div class="close" onclick="signupCompanyToggle()">&times;</div>
+          <form method="post">
+            <div class="user-name">
+              <div class="header">
+                <i class="fa-regular fa-circle-user"></i>
+                <h1>Registro del Representante</h1>
+              </div>
+              <label class="">Nombre:</label>
+              <input class="text-box" type="text" required />
+              <label class="">Apellido:</label>
+              <input class="text-box" type="text" required />
+              <label class="">Correo:</label>
+              <input class="text-box" type="email" required />
+  
+              <div class="header">
+                <h1>Informacion de la Empresa</h1>
+              </div>
+              <label>Nombre de la Empresa:</label>
+              <input class="text-box" type="text" />
+              <label>Telefono de Contacto:</label>
+              <input class="text-box" type="number" required />
+              <label>Identificación fiscal (Cédula RUC):</label>
+              <input class="text-box" type="text" required />
+              <label>Descripción de la empresa:</label>
+              <input class="text-box" type="text" required />
+              <label>Contraseña:</label>
+              <input class="text-box" type="password" required />
+              <label>Confirme su contraseña:</label>
+              <input class="text-box" type="password" required />
+              <input class="btn" type="submit" value="Registrarse" />
+            </div>
+          </form>
+        </div>
+      </div>
+      <!--Div que contiene el formulario iniciar sesion-->
+      <div class="form login-form">
+        <div class="form1 nav-menu-horizontal">
+          <div class="close" onclick="loginToggle()">&times;</div>
+          <div class="header">
+            <i class="fa-regular fa-circle-user"></i>
+            <h1>Iniciar sesión</h1>
+          </div>
+          <form id="loginForm" method="post">
+            <div>
+              <div class="user-name">
+                <label class="">Nombre de Usuario</label>
+                <input id="txtUser" class="text-box" type="text" required />
+              </div>
+  
+              <div class="password">
+                <label>Contraseña</label>
+                <input id="passUser" class="text-box" type="password" required />
+              </div>
+              <div>
+                <input id="typeUser" type="checkbox">
+                <label for="typeUser">Click aqui si eres una empresa.</label>
+              </div>
+              <div class="btn-area-login">
+                <input
+                  class="btn"
+                  type="submit"
+                  style="text-decoration: none"
+                  value="Iniciar Sesion"
+                />
+                <li>
+                  <div class="btn2">
+                    <a>¿Aún no tienes cuenta? mira aquí </a>
+                    <ul class="nav-menu-vertical nav-menu-vertical2">
+                      <div>
+                        <li><a href="create-account.html">Como Usuario</a></li>
+                        <li><a href="login-company.html">Como Empresa</a></li>
+                      </div>
+                    </ul>
+                  </div>
+                </li>
+              </div>
+              <a href="account-recovery.html"
+                >¿Olvidastes tu contraseña o tu Usuario?</a
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+  
+    <script src="js/login-singnup-modal.js"></script>
+    <script src="js/forms.js"></script>
 </body>
 
 </html>

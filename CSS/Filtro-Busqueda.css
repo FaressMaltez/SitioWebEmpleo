@@ -1,0 +1,124 @@
+.menu-option{
+    display: flex; /*Para que ubique el filtro al lado de las ofertas*/
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.added-oferts{
+    width: 100%;
+}
+
+.menu-filter{ /*Estilo del contenedor del filtro¨*/
+    display: flex;
+    flex-direction: column;
+    background-color: #0d30594f;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 300px;
+    gap: 30px;
+    padding:  20px 8px;
+}
+
+
+.menu-filter-items{/*Para que los checkbox y radiobuttons esten al lado de su label*/
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+}
+
+.menu-filter .title{/*Titulo de las secciones del filtro*/
+    color: white;
+    font-size: 20px;
+    
+}
+
+.menu-filter .more{ /*color de los mostrar mas*/
+    color: white;
+    
+}
+
+.menu-filter label{ /*label de los checkbox*/
+    color: gainsboro;
+}
+
+.menu-oferts{ /*contenedor de las ofertas*/
+    display: flex;
+    flex-direction: column;
+}
+
+/*estilo del numero de paginas*/
+
+.number-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.number-page a{
+    font-size: 20px;
+}
+
+.number-page-selected{
+    background-color: #1D69BF;
+    width: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+#check2 {
+    display: none;
+}
+
+#check:checked~.menu-filter {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    transition: 0s;
+    align-items: left;
+    gap: 0;
+}
+
+#check:checked~.bar-btn2 {
+    position: fixed;
+    right: 10px;
+}
+
+#check:checked~.bar-btn2 {
+    position: fixed;
+    right: 10px;
+}
+
+#check:checked~.bar-btn{
+    display: hidden;
+}
+
+@media (max-width: 470px) {
+
+    .bar-btn2 {
+        display: block;
+        z-index: 50;
+        font-size: 50px;
+        margin: 30px 0;
+    }
+
+    .menu-filter{
+        display: none;
+        position: fixed;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        background-color: #0D3159;
+        gap: 50px;
+        padding-top: 50px;
+        font-size: 20px;
+    }
+    .menu-options{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+

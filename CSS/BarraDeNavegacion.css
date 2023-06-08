@@ -76,11 +76,11 @@ header {
     margin-right: 0;
 }
 
-.Nav-Menu li {
-    margin-right: 5px;
+.Nav-Menu li{
+    margin-right: 15px;
     font-weight: lighter;
-
 }
+
 .Nav-Menu h1 {
     font-size: 25px;
 }
