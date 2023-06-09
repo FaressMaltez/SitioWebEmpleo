@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Empresa</title>
+    <script src="https://kit.fontawesome.com/7f3c790161.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/BarraDeNavegacion.css">
+    <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="CSS/login-company.css">
+    <link rel="stylesheet" href="CSS/login.css">
+</head>
+
+<body class="body">
+
+    <header>
+         <!-- BARRA DE NAVEGACION -->
+         <nav class="Nav-Menu">
+            <!-- 1- Esta parte sirve para colocar la imagen y el titulo de Ofertas de empleo y tiene la 
+            funcion A que implica el enlace para dirigir a la pagina de inicio si se hace clic en
+             la imagen o en el titulo de ofertas de empleo-->
+            <a href="Index.html">
+                <ul class="Nav-Menu-Logo">
+                    <li>
+                        <img class="Logo-Header" src="Imagenes\Logo.jpg">
+                    </li>
+                    <li>
+                        <h1>Ofertas de Empleo</h1>
+                    </li>
+                </ul>
+            </a>
+            <!-- 1- Fin de la primera parte-->
+
+            <!-- 2- el input se ocupa para el ingreso de datos 
+                    id solo se ocupa la identificar el input
+                    label es la etiqueta 
+                    se utiliza para determinar el ID del elemento de entrada al que se debe asociar el título 
+                    Se utiliza i Muestra el texto marcado con un estilo en cursiva o italica-->
+            <input type="checkbox" id="Check">
+            <label for="Check" class="Bar-Btn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <!-- 2- Fin de la segunda parte-->
+
+            <!-- 3- -->
+            <ul class="Nav-Menu-Horizontal">
+                <!-- textos para la barra de navegacion -->
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="Buscar_Trabajo.html">Buscar Empleo</a></li>
+                <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
+                <!-- boton desplegable de registrar  -->
+                <li>
+                    <a class="Nav-Menu-BtnRegi">
+                        Registrarse
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <!-- botones desplegables los cuales son usuario empresa   -->
+                    <ul class="Nav-Menu-Vertical">
+                        <div>
+<!--signUserToggle, signCompay toggle, login toggle son metodos de JS que permiten llamar a los formularios al dar click-->
+                            <li onclick="signupUserToggle()"><a>Como Usuario</a></li>
+                            <li onclick="signupCompanyToggle()"><a>Como Empresa</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <!-- boton de inicio de sesion  -->
+                <li onclick="loginToggle()">
+                    <a class="Nav-Menu-BtnIni">Iniciar Sesion</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-signup">
+        <form method="post">
+            <!-- Sección de registro del representante -->
+            <div class="Nav-Menu-Horizontal user-class">
+                <div class="header">
+                    <i class="fa-regular fa-circle-user"></i>
+                    <h1>Registro del Representante</h1>
+                </div>
+                <div class="user-name">
+                    <label class="">Nombre:</label>
+                    <input class="text-box" type="text" required>
+                    <label class="">Apellido:</label>
+                    <input class="text-box" type="text" required>
+                    <label class="">Correo:</label>
+                    <input class="text-box" type="email" required>
+                </div>
+
+                <div class="header">
+                    <h1>Informacion de la Empresa</h1>
+                </div>
+
+                <div class="password">
+                    <label>Nombre de la Empresa:</label>
+                    <input class="text-box" type="text">
+                    <label>Telefono de Contacto:</label>
+                    <input class="text-box" type="number" required>
+                    <label>Identificación fiscal (Cédula RUC):</label>
+                    <input class="text-box" type="text" required>
+                    <label>Descripción de la empresa:</label>
+                    <input class="text-box" type="text" required>
+                    <label>Contraseña:</label>
+                    <input class="text-box" type="password" required>
+                    <label>Confirme su contraseña:</label>
+                    <input class="text-box" type="password" required>
+                </div>
+                <div class="btn-area">
+                    <input class="btn" type="submit" value="Registrarse">
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <script src="js/login-singnup-modal.js"></script>
+    <script src="js/app.js"></script>
+
+
+</body>
+
+</html>
